@@ -1,0 +1,8 @@
+2023-09-10 16:59:01.333 [main] INFO  testCase.testCase1 - ******* create_token_from_Auth *******
+2023-09-10 16:59:04.359 [main] INFO  testCase.testCase1 - ******* Verifying that tokken is Not Null *******
+2023-09-10 16:59:04.567 [main] INFO  testCase.testCase1 - ******* Create a BookingPayload instance with data *******
+2023-09-10 16:59:07.618 [main] INFO  testCase.testCase1 - ******* Verifying that Last Name is the same as input or not *******
+2023-09-10 16:59:07.646 [main] INFO  testCase.testCase1 - ******* Updating the Created Booking Data  *******
+2023-09-10 16:59:10.630 [main] INFO  testCase.testCase1 - ******* Verifying that Last Name is same as updated data or not  *******
+2023-09-10 16:59:10.669 [main] INFO  testCase.testCase1 - ******* Featching the Booking Details by id  *******
+2023-09-10 16:59:13.644 [main] INFO  testCase.testCase1 - ******* Verifying that totalprice is same as input data or not  *******
