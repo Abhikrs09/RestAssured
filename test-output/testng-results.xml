@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-23T20:39:53 IST" name="Suite" finished-at="2023-09-23T20:40:17 IST" duration-ms="23359">
+  <suite started-at="2023-10-02T11:35:26 IST" name="Default suite" finished-at="2023-10-02T11:35:30 IST" duration-ms="4098">
     <groups>
     </groups>
-    <test started-at="2023-09-23T20:39:53 IST" name="Test" finished-at="2023-09-23T20:40:17 IST" duration-ms="23359">
+    <test started-at="2023-10-02T11:35:26 IST" name="Default test" finished-at="2023-10-02T11:35:30 IST" duration-ms="4098">
       <class name="testCase.testCase1">
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:testCase.testCase1@27f9e982]" started-at="2023-09-23T20:39:53 IST" name="startTest" finished-at="2023-09-23T20:39:54 IST" duration-ms="622" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:testCase.testCase1@329a1243]" started-at="2023-10-02T11:35:26 IST" name="startTest" finished-at="2023-10-02T11:35:27 IST" duration-ms="926" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,93 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="create_token_from_Auth()[pri:1, instance:testCase.testCase1@27f9e982]" started-at="2023-09-23T20:39:54 IST" name="create_token_from_Auth" finished-at="2023-09-23T20:39:57 IST" duration-ms="2906" status="PASS">
+        <test-method signature="create_token_from_Auth()[pri:1, instance:testCase.testCase1@329a1243]" started-at="2023-10-02T11:35:27 IST" name="create_token_from_Auth" finished-at="2023-10-02T11:35:30 IST" duration-ms="2830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create_token_from_Auth -->
-        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:testCase.testCase1@27f9e982]" started-at="2023-09-23T20:39:57 IST" name="status" finished-at="2023-09-23T20:39:57 IST" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:testCase.testCase1@329a1243]" started-at="2023-10-02T11:35:30 IST" name="status" finished-at="2023-10-02T11:35:30 IST" duration-ms="279" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=create_token_from_Auth status=SUCCESS method=testCase1.create_token_from_Auth()[pri:1, instance:testCase.testCase1@27f9e982] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- status -->
-        <test-method signature="booking_create()[pri:2, instance:testCase.testCase1@27f9e982]" started-at="2023-09-23T20:39:57 IST" name="booking_create" finished-at="2023-09-23T20:40:00 IST" duration-ms="2653" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- booking_create -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:testCase.testCase1@27f9e982]" started-at="2023-09-23T20:39:57 IST" name="startTest" finished-at="2023-09-23T20:39:57 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testCase.testCase1.booking_create() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:testCase.testCase1@27f9e982]" started-at="2023-09-23T20:40:00 IST" name="status" finished-at="2023-09-23T20:40:00 IST" duration-ms="16" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=booking_create status=SUCCESS method=testCase1.booking_create()[pri:2, instance:testCase.testCase1@27f9e982] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- status -->
-        <test-method signature="booking_update()[pri:3, instance:testCase.testCase1@27f9e982]" started-at="2023-09-23T20:40:00 IST" name="booking_update" finished-at="2023-09-23T20:40:02 IST" duration-ms="2523" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- booking_update -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:testCase.testCase1@27f9e982]" started-at="2023-09-23T20:40:00 IST" name="startTest" finished-at="2023-09-23T20:40:00 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testCase.testCase1.booking_update() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:testCase.testCase1@27f9e982]" started-at="2023-09-23T20:40:02 IST" name="status" finished-at="2023-09-23T20:40:02 IST" duration-ms="16" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=booking_update status=SUCCESS method=testCase1.booking_update()[pri:3, instance:testCase.testCase1@27f9e982] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- status -->
-        <test-method signature="get_booking_by_id()[pri:4, instance:testCase.testCase1@27f9e982]" started-at="2023-09-23T20:40:02 IST" name="get_booking_by_id" finished-at="2023-09-23T20:40:05 IST" duration-ms="2688" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_booking_by_id -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:testCase.testCase1@27f9e982]" started-at="2023-09-23T20:40:02 IST" name="startTest" finished-at="2023-09-23T20:40:02 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testCase.testCase1.get_booking_by_id() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:testCase.testCase1@27f9e982]" started-at="2023-09-23T20:40:05 IST" name="status" finished-at="2023-09-23T20:40:05 IST" duration-ms="15" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=get_booking_by_id status=SUCCESS method=testCase1.get_booking_by_id()[pri:4, instance:testCase.testCase1@27f9e982] output={null}]]]>
+                <![CDATA[[TestResult name=create_token_from_Auth status=SUCCESS method=testCase1.create_token_from_Auth()[pri:1, instance:testCase.testCase1@329a1243] output={null}]]]>
               </value>
             </param>
           </params>
@@ -112,112 +34,6 @@
           </reporter-output>
         </test-method> <!-- status -->
       </class> <!-- testCase.testCase1 -->
-      <class name="testCase.testCase2">
-        <test-method signature="create_token_from_Auth()[pri:1, instance:testCase.testCase2@60afd40d]" started-at="2023-09-23T20:40:05 IST" name="create_token_from_Auth" finished-at="2023-09-23T20:40:07 IST" duration-ms="2161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- create_token_from_Auth -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:testCase.testCase2@60afd40d]" started-at="2023-09-23T20:40:05 IST" name="startTest" finished-at="2023-09-23T20:40:05 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testCase.testCase2.create_token_from_Auth() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:testCase.testCase2@60afd40d]" started-at="2023-09-23T20:40:07 IST" name="status" finished-at="2023-09-23T20:40:07 IST" duration-ms="16" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=create_token_from_Auth status=SUCCESS method=testCase2.create_token_from_Auth()[pri:1, instance:testCase.testCase2@60afd40d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- status -->
-        <test-method signature="booking_create()[pri:2, instance:testCase.testCase2@60afd40d]" started-at="2023-09-23T20:40:07 IST" name="booking_create" finished-at="2023-09-23T20:40:10 IST" duration-ms="2775" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- booking_create -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:testCase.testCase2@60afd40d]" started-at="2023-09-23T20:40:07 IST" name="startTest" finished-at="2023-09-23T20:40:07 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testCase.testCase2.booking_create() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:testCase.testCase2@60afd40d]" started-at="2023-09-23T20:40:10 IST" name="status" finished-at="2023-09-23T20:40:10 IST" duration-ms="16" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=booking_create status=SUCCESS method=testCase2.booking_create()[pri:2, instance:testCase.testCase2@60afd40d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- status -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:testCase.testCase2@60afd40d]" started-at="2023-09-23T20:40:10 IST" name="startTest" finished-at="2023-09-23T20:40:10 IST" duration-ms="11" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testCase.testCase2.booking_partial_update() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method signature="booking_partial_update()[pri:3, instance:testCase.testCase2@60afd40d]" started-at="2023-09-23T20:40:10 IST" name="booking_partial_update" finished-at="2023-09-23T20:40:14 IST" duration-ms="3725" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- booking_partial_update -->
-        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:testCase.testCase2@60afd40d]" started-at="2023-09-23T20:40:14 IST" name="status" finished-at="2023-09-23T20:40:14 IST" duration-ms="16" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=booking_partial_update status=SUCCESS method=testCase2.booking_partial_update()[pri:3, instance:testCase.testCase2@60afd40d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- status -->
-        <test-method signature="booking_delete_data()[pri:4, instance:testCase.testCase2@60afd40d]" started-at="2023-09-23T20:40:14 IST" name="booking_delete_data" finished-at="2023-09-23T20:40:17 IST" duration-ms="2884" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- booking_delete_data -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:testCase.testCase2@60afd40d]" started-at="2023-09-23T20:40:14 IST" name="startTest" finished-at="2023-09-23T20:40:14 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testCase.testCase2.booking_delete_data() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:testCase.testCase2@60afd40d]" started-at="2023-09-23T20:40:17 IST" name="status" finished-at="2023-09-23T20:40:17 IST" duration-ms="63" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=booking_delete_data status=SUCCESS method=testCase2.booking_delete_data()[pri:4, instance:testCase.testCase2@60afd40d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- status -->
-      </class> <!-- testCase.testCase2 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

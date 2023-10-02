@@ -2,7 +2,6 @@ package utilities;
 
 public class EndPoints {
 
-	
 	public static String auth = "/auth";
 	
 	public static String getById = "/booking/";

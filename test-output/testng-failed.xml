@@ -6,8 +6,8 @@
       <class name="testCase.testCase1">
         <methods>
           <include name="startTest"/>
-          <include name="booking_create"/>
           <include name="status"/>
+          <include name="booking_update"/>
         </methods>
       </class> <!-- testCase.testCase1 -->
     </classes>

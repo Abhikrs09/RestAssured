@@ -12,6 +12,7 @@ import payloads.pojo_class_auth_data;
 import payloads.pojo_booking_create_data;
 import repeatables.BasePage;
 import repeatables.data_pojo_class_create;
+import repeatables.data_pojo_class_login;
 import repeatables.data_pojo_class_update;
 import utilities.EndPoints;
 import utilities.ReadingPropertiesFile;
@@ -31,9 +32,10 @@ public class testCase1 extends BasePage {
 		logger.info("******* create_token_from_Auth *******");
 		// Taking the JSON passed in body in a dynamic way. 
 		
-		String username = ReadingPropertiesFile.getProperty("username");
-		String password = ReadingPropertiesFile.getProperty("password");
-		String body_data = dynamic_auth_data.auth_payload(username, password);
+//		String username = ReadingPropertiesFile.getProperty("username");
+//		String password = ReadingPropertiesFile.getProperty("password");
+//		String body_data = dynamic_auth_data.auth_payload(username, password);
+		String body_data = data_pojo_class_login.login_data();
 		
 		Response server_resp =restClient.post_Authorization(EndPoints.auth, body_data)
 										.then()
