@@ -1,0 +1,15 @@
+2023-10-02 11:42:05.131 [main] INFO  testCase.testCase1 - ******* create_token_from_Auth *******
+2023-10-02 11:42:08.850 [main] INFO  testCase.testCase1 - ******* Verifying that tokken is Not Null *******
+2023-10-02 11:42:09.115 [main] INFO  testCase.testCase1 - ******* Create a BookingPayload instance with data *******
+2023-10-02 11:42:10.576 [main] INFO  testCase.testCase1 - ******* Verifying that Last Name is the same as input or not *******
+2023-10-02 11:42:10.618 [main] INFO  testCase.testCase1 - ******* Updating the Created Booking Data  *******
+2023-10-02 11:42:12.048 [main] INFO  testCase.testCase1 - ******* Verifying that Last Name is same as updated data or not  *******
+2023-10-02 11:42:12.127 [main] INFO  testCase.testCase1 - ******* Featching the Booking Details by id  *******
+2023-10-02 11:42:17.720 [main] INFO  testCase.testCase2 - ******* create_token_from_Auth *******
+2023-10-02 11:42:19.385 [main] INFO  testCase.testCase2 - ******* Verifying that tokken is Not Null *******
+2023-10-02 11:42:19.417 [main] INFO  testCase.testCase2 - ******* Create a BookingPayload instance with data *******
+2023-10-02 11:42:20.773 [main] INFO  testCase.testCase2 - ******* Verifying that Last Name is the same as input or not *******
+2023-10-02 11:42:20.799 [main] INFO  testCase.testCase2 - ******* booking_partial_update *******
+2023-10-02 11:42:22.191 [main] INFO  testCase.testCase2 - ******* Verifying that FName  is same as the updated or not *******
+2023-10-02 11:42:22.222 [main] INFO  testCase.testCase2 - ******* booking_delete_data *******
+2023-10-02 11:42:23.629 [main] INFO  testCase.testCase2 - ******* The data is deleted after processing *******

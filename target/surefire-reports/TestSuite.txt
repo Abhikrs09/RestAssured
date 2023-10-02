@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.907 s <<< FAILURE! - in TestSuite
+testCase.testCase1.get_booking_by_id  Time elapsed: 5.526 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at testCase.testCase1.get_booking_by_id(testCase1.java:121)
+
