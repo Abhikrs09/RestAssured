@@ -1,0 +1,48 @@
+2025-04-28 22:24:03.368 [main] INFO  utilities.TestListeners - Test Suite Started: Test
+2025-04-28 22:24:04.080 [main] INFO  utilities.TestListeners - Test Started: create_token_from_Auth
+2025-04-28 22:24:04.082 [main] INFO  testCase.testCase1 - Creating authentication token
+2025-04-28 22:24:07.105 [main] INFO  testCase.testCase1 - ******* Verifying that tokken is Not Null *******
+2025-04-28 22:24:07.108 [main] INFO  utilities.TestListeners - Test Passed: create_token_from_Auth
+2025-04-28 22:24:07.108 [main] INFO  utilities.TestListeners - Test execution time for create_token_from_Auth: 3028 ms
+2025-04-28 22:24:07.260 [main] INFO  utilities.TestListeners - Test Started: booking_create
+2025-04-28 22:24:07.261 [main] INFO  testCase.testCase1 - Creating a new booking
+2025-04-28 22:24:08.741 [main] INFO  testCase.testCase1 - ******* Verifying that Last Name is the same as input or not *******
+2025-04-28 22:24:08.742 [main] INFO  utilities.TestListeners - Test Passed: booking_create
+2025-04-28 22:24:08.742 [main] INFO  utilities.TestListeners - Test execution time for booking_create: 1482 ms
+2025-04-28 22:24:08.790 [main] INFO  utilities.TestListeners - Test Started: booking_update
+2025-04-28 22:24:08.791 [main] INFO  testCase.testCase1 - Updating the booking
+2025-04-28 22:24:10.102 [main] INFO  testCase.testCase1 - ******* Verifying that Last Name is same as updated data or not  *******
+2025-04-28 22:24:10.103 [main] INFO  utilities.TestListeners - Test Passed: booking_update
+2025-04-28 22:24:10.103 [main] INFO  utilities.TestListeners - Test execution time for booking_update: 1313 ms
+2025-04-28 22:24:10.135 [main] INFO  utilities.TestListeners - Test Started: get_booking_by_id
+2025-04-28 22:24:10.135 [main] INFO  testCase.testCase1 - Fetching booking details by ID
+2025-04-28 22:24:22.988 [main] INFO  testCase.testCase1 - ******* Verifying that totalprice is same as input data or not  *******
+2025-04-28 22:24:22.989 [main] INFO  utilities.TestListeners - Test Passed: get_booking_by_id
+2025-04-28 22:24:22.989 [main] INFO  utilities.TestListeners - Test execution time for get_booking_by_id: 12854 ms
+2025-04-28 22:24:23.022 [main] INFO  utilities.TestListeners - Test Started: create_token_from_Auth
+2025-04-28 22:24:23.023 [main] INFO  testCase.testCase2 - Creating authentication token
+2025-04-28 22:24:24.815 [main] INFO  testCase.testCase2 - ******* Verifying that tokken is Not Null *******
+2025-04-28 22:24:24.816 [main] INFO  utilities.TestListeners - Test Passed: create_token_from_Auth
+2025-04-28 22:24:24.816 [main] INFO  utilities.TestListeners - Test execution time for create_token_from_Auth: 1794 ms
+2025-04-28 22:24:24.841 [main] INFO  utilities.TestListeners - Test Started: booking_create
+2025-04-28 22:24:24.841 [main] INFO  testCase.testCase2 - Creating a new booking
+2025-04-28 22:24:26.400 [main] INFO  testCase.testCase2 - ******* Verifying that Last Name is the same as input or not *******
+2025-04-28 22:24:26.401 [main] INFO  utilities.TestListeners - Test Passed: booking_create
+2025-04-28 22:24:26.402 [main] INFO  utilities.TestListeners - Test execution time for booking_create: 1561 ms
+2025-04-28 22:24:26.450 [main] INFO  utilities.TestListeners - Test Started: booking_partial_update
+2025-04-28 22:24:26.451 [main] INFO  testCase.testCase2 - Performing partial update of booking
+2025-04-28 22:24:27.987 [main] INFO  testCase.testCase2 - ******* Verifying that FName  is same as the updated or not *******
+2025-04-28 22:24:27.987 [main] INFO  utilities.TestListeners - Test Passed: booking_partial_update
+2025-04-28 22:24:27.987 [main] INFO  utilities.TestListeners - Test execution time for booking_partial_update: 1537 ms
+2025-04-28 22:24:28.092 [main] INFO  utilities.TestListeners - Test Started: booking_delete_data
+2025-04-28 22:24:28.092 [main] INFO  testCase.testCase2 - Deleting booking
+2025-04-28 22:24:30.246 [main] INFO  testCase.testCase2 - ******* The data is deleted after processing *******
+2025-04-28 22:24:30.247 [main] INFO  utilities.TestListeners - Test Passed: booking_delete_data
+2025-04-28 22:24:30.249 [main] INFO  utilities.TestListeners - Test execution time for booking_delete_data: 2156 ms
+2025-04-28 22:24:30.292 [main] INFO  utilities.TestListeners - Test Suite Finished: Test
+2025-04-28 22:24:30.293 [main] INFO  utilities.TestListeners - 
+Test Execution Summary:
+Total Tests: 8
+Passed Tests: 8
+Failed Tests: 0
+Skipped Tests: 0

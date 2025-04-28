@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="methods" thread-count="3" verbose="1">
+    
+    <!-- Listeners -->
+    <listeners>
+        <listener class-name="utilities.TestListeners"/>
+    </listeners>
+
+    <!-- Test Group 1: Authentication and Booking Creation -->
+    <test name="Authentication and Booking Tests" parallel="methods" thread-count="2">
+        <classes>
+            <class name="testCase.testCase1">
+                <methods>
+                    <include name="create_token_from_Auth"/>
+                    <include name="booking_create"/>
+                </methods>
+            </class>
+            <class name="testCase.testCase2">
+                <methods>
+                    <include name="create_token_from_Auth"/>
+                    <include name="booking_create"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test Group 2: Booking Management -->
+    <test name="Booking Management Tests" parallel="methods" thread-count="2">
+        <classes>
+            <class name="testCase.testCase1">
+                <methods>
+                    <include name="booking_update"/>
+                    <include name="get_booking_by_id"/>
+                </methods>
+            </class>
+            <class name="testCase.testCase2">
+                <methods>
+                    <include name="booking_partial_update"/>
+                    <include name="booking_delete_data"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Parameter Configuration -->
+    <parameter name="baseUrl" value="https://restful-booker.herokuapp.com/"/>
+    <parameter name="maxRetryCount" value="2"/>
+    
+</suite> 
