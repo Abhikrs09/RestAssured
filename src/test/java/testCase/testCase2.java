@@ -29,15 +29,10 @@ public class testCase2 extends BasePage {
 	@Test(priority=1)
 	public void create_token_from_Auth() throws Exception{
 		
-		logger.info("******* create_token_from_Auth *******");
-		// Taking the JSON passed in body in a dynamic way. 
-		
-//		String username = ReadingPropertiesFile.getProperty("username");
-//		String password = ReadingPropertiesFile.getProperty("password");
-//		String body_data = dynamic_auth_data.auth_payload(username, password);
+		logger.info("Creating authentication token");
 		String body_data = data_pojo_class_login.login_data();
 		
-		Response server_resp =restClient.post_Authorization(EndPoints.auth, body_data)
+		Response server_resp =restClient.post_Authorization(EndPoints.getAuth(), body_data)
 										.then()
 										.assertThat()
 										.statusCode(200)
@@ -58,26 +53,24 @@ public class testCase2 extends BasePage {
 	@Test(priority=2)
 	public void booking_create() throws Exception{
 		
-		logger.info("******* Create a BookingPayload instance with data *******");
-		// Taking data for body using a POJO class
+		logger.info("Creating a new booking");
+		String body_string = data_pojo_class_create.payload_data_file();
+
+		Response server_resp = restClient.post_create_data(EndPoints.getCreateBooking(), Token, body_string)
+				.then()
+				.assertThat()
+				.statusCode(200)
+				.extract()
+				.response();
+
+		server_resp.prettyPeek();
 		
-	    String body_string = data_pojo_class_create.payload_data_file();
+		pojo_class_auth_data bookingResponse = objectMapper.readValue(server_resp.asString(), pojo_class_auth_data.class);
+		id = String.valueOf(bookingResponse.getBookingid());
+		String LName = bookingResponse.getBooking().getLastname();
 
-	    Response server_resp = restClient.post_create_data(EndPoints.createBooking, Token, body_string)
-	            .then()
-	            .assertThat()
-	            .statusCode(200)
-	            .extract()
-	            .response();
-
-	    server_resp.prettyPeek();
-	    
-	    pojo_class_auth_data bookingResponse = objectMapper.readValue(server_resp.asString(), pojo_class_auth_data.class);
-	    id = String.valueOf(bookingResponse.getBookingid());
-	    String LName = bookingResponse.getBooking().getLastname();
-
-	    logger.info("******* Verifying that Last Name is the same as input or not *******");
-	    Assert.assertEquals(LName, ReadingPropertiesFile.getProperty("lName"));
+		logger.info("******* Verifying that Last Name is the same as input or not *******");
+		Assert.assertEquals(LName, ReadingPropertiesFile.getProperty("lName"));
 		
 	}
 	
@@ -86,10 +79,10 @@ public class testCase2 extends BasePage {
 	@Test(priority=3)
 	public void booking_partial_update() throws Exception{
 		
-		logger.info("******* booking_partial_update *******");
+		logger.info("Performing partial update of booking");
 		
 		String body_string = Utils.generateStringFromResource("/testData/partial_update_data.json");
-		Response server_resp = restClient.partial_update(EndPoints.partial_update+id, Token, body_string)
+		Response server_resp = restClient.partial_update(EndPoints.getPartialUpdate() + id, Token, body_string)
 										 .then()
 										 .log()
 										 .all()
@@ -113,10 +106,10 @@ public class testCase2 extends BasePage {
 	@Test(priority=4)
 	public void booking_delete_data() throws Exception{
 		
-		logger.info("******* booking_delete_data *******");
+		logger.info("Deleting booking");
 		
 		Response server_resp = restClient
-							  .delete(EndPoints.delete+id, Token)
+							  .delete(EndPoints.getDelete() + id, Token)
 							  .then()
 							  .log()
 							  .all()

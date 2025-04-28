@@ -1,5 +1,6 @@
 package testCase;
 
+import json_pojo_data.Json_data_pojo_class_login;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -19,6 +20,7 @@ import utilities.ReadingPropertiesFile;
 
 
 
+
 public class testCase1 extends BasePage {
 
 	public static String Token;
@@ -27,19 +29,21 @@ public class testCase1 extends BasePage {
 	protected static ReadingPropertiesFile readingPropertiesFile = new ReadingPropertiesFile();
 	
 	@Test(priority=1)
+
 	public void create_token_from_Auth() throws Exception{
 		
-		logger.info("******* create_token_from_Auth *******");
+		logger.info("Creating authentication token");
 		// Taking the JSON passed in body in a dynamic way. 
 		
 //		String username = ReadingPropertiesFile.getProperty("username");
 //		String password = ReadingPropertiesFile.getProperty("password");
 //		String body_data = dynamic_auth_data.auth_payload(username, password);
 		
-		
-		String body_data = data_pojo_class_login.login_data();
-		
-		Response server_resp =restClient.post_Authorization(EndPoints.auth, body_data)
+		// Reading values from pproperties file and giving in the data_pojo_class_login
+//		String body_data = data_pojo_class_login.login_data();
+
+		String body_data = Json_data_pojo_class_login.login_data();
+		Response server_resp =restClient.post_Authorization(EndPoints.getAuth(), body_data)
 										.then()
 										.assertThat()
 										.statusCode(200)
@@ -60,12 +64,12 @@ public class testCase1 extends BasePage {
 	@Test(priority=2)
 	public void booking_create() throws Exception{
 		
-		logger.info("******* Create a BookingPayload instance with data *******");
+		logger.info("Creating a new booking");
 		// Taking data for body using a POJO class
 		
 	    String body_string = data_pojo_class_create.payload_data_file();
 
-	    Response server_resp = restClient.post_create_data(EndPoints.createBooking, Token, body_string)
+	    Response server_resp = restClient.post_create_data(EndPoints.getCreateBooking(), Token, body_string)
 	            .then()
 	            .assertThat()
 	            .statusCode(200)
@@ -87,11 +91,11 @@ public class testCase1 extends BasePage {
 	@Test(priority=3)
 	public void booking_update() throws Exception {
 		
-		logger.info("******* Updating the Created Booking Data  *******");
+		logger.info("Updating the booking");
 		
 		
 		String body_data= data_pojo_class_update.payload_data_file();
-		Response server_resp = restClient.update(EndPoints.update_booking+id,body_data,Token)
+		Response server_resp = restClient.update(EndPoints.getUpdateBooking() + id,body_data,Token)
 								.then()
 								.statusCode(200)
 								.extract()
@@ -113,9 +117,9 @@ public class testCase1 extends BasePage {
 	@Test(priority=4)
 	public void get_booking_by_id() throws Exception{
 		
-		logger.info("******* Featching the Booking Details by id  *******");
+		logger.info("Fetching booking details by ID");
 		
-		Response server_resp = restClient.get_data(EndPoints.getById+id, Token)
+		Response server_resp = restClient.get_data(EndPoints.getGetById() + id, Token)
 								.then()
 								.log()
 								.all()
